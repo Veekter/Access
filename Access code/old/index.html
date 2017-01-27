@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Included CSS Files -->
+	<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Roboto+Slab:400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+	<script type="text/javascript" src="js/modernizr.custom.72882.js"></script> -->
+<title>Business Basket</title>
+</head>
+<body>
+<h1> Welcome to the Business Basket!</h1>
+<p><?php include 'script.php';?>
+<?php echo $_POST['value']; 
+?>
+
+<form  action= "script.php" method = "post" action ="">
+
+<fieldset
+ <legend>Personalia:</legend>
+Name: <input type = "text" name= "name"  /><br />
+Email:<input type = "email" name= "email"  /><br />
+Password:<input type="password" name="pwd"  /><br />
+Phone Number:<input type="number" name="num"  />
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+  </fieldset>
+
+<p>  <br />
+  
+  <?php echo $_POST[ 'value'];
+?>
+  <fieldset
+ <legend>Internet:</legend>
+  Internet Mbs: <input type = "number" name = "internet" />
+  
+  
+  </fieldset> <p>
+  <?php echo $_POST['value'];?>
+ 
+  <fieldset
+ <legend>Website Hosting:</legend>
+  
+<p> Would you like our web hosting services and domain name registration(.co.ke and .com)?</p>
+<p>
+  <input type= "radio" name= "hosting" value= "yes" /> 
+  Yes<br />
+<input type= "radio" name= "hosting" value= "no"   />No<br />
+</fieldset>
+</p>
+<p>
+  <?php echo $_POST[ 'value'];
+?>
+
+  <fieldset
+ <legend>Hosted E-mail:</legend>
+  Number of Mailboxes : <input type = "number" name = "boxes" />
+  
+  </fieldset> 
+<p>
+  <?php echo $_POST['value'];?>
+ 
+  <fieldset
+ 
+  <legend>Half E1 and E1:</legend>
+<p> Would you prefer Half E1 or E1 voice?( Voice channels: 15 or 30)</p>
+<input type= "radio" name= "one" value= "yes" />Half E1 <br />
+<input type= "radio" name= "one" value= "no"   />E1<br />
+</fieldset>
+ 
+  
+<!--End of In House bundels_-->
+<!--Beginning of Out There Bundles -->
+<p><?php echo $_POST['value'];
+?><br />
+
+<fieldset
+ <legend>FireWall:</legend>
+<p>Would you like FireWall Service?</p>
+<input type = "radio" name="wall" value="yes"  />Yes<br />
+<input type = "radio" name="wall"  value="no"  />No<br/>
+</fieldset>
+ 
+<p><?php echo $_POST['value'];
+?><br />
+
+<fieldset
+ <legend>Wifi:</legend>
+<p>Enter the the number of Hotspots required for your wifi:
+<input type = "number" name = "wifi" />
+
+</fieldset>
+</p>
+<p> 
+  <?php echo $_POST[ 'value'];
+?>
+  <br />
+  <fieldset
+ <legend>LAN:</legend>
+  Number of Users : <input type = "number" name = "Users" />
+ 
+  </fieldset>
+ 
+  
+<p><?php echo $_POST['value'];
+?><br />
+
+ <fieldset
+ <legend>File Sharing:</legend>
+<p>Enter the the number of users for our file sharing service:</p>
+<p>Users:
+  <input type="number" name="input" /> <br>
+  <br>
+  
+  </fieldset>
+</p>
+<p> 
+  <?php echo $_POST[ 'value'];
+?>
+  <br />
+  <fieldset
+ </p>
+<legend>Backup Servers:</legend>
+ <p>Number of Servers :
+  <input type = "number" name = "servers" />
+ 
+  </fieldset>
+ </p>
+ <p>
+   <?php echo $_POST[ 'value'];
+?>
+  <br />
+   <fieldset
+ </p>
+<legend>User Back-Up:</legend>
+ <p>Number of Users :
+  <input type = "number" name = "user" />
+  </fieldset>
+   <br>
+   
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type = "submit" />
+ </p>
+<p>&nbsp; </p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <button type ="button" name= "btn" > Next </button>
+ <br>
+</form>
+
+</p>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
